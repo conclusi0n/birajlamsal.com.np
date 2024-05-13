@@ -1,69 +1,42 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <h1>Hello World</h1>
-  <h2>Again starting from scratch . Going to start soon .</h2>
-<p>just finished up with Sub domans</p>
-  <p> soon going to work on it for mkaing this my business site </p>
-  <h3>connct me with :-</h3><br>
-  <p1>twitter.birajlamsal.com.np</p1><br>
-  <p1>facebook.birajlamsal.com.np</p1><br>
-  <p1>instagram.birajlamsal.com.np</p1><br>
-  <p1>youtube.birajlamsal.com.np</p1><br>
-  <p1>github.birajlamsal.com.np</p1><br>
-  <p1>discord.birajlamsal.com.np</p1>
-  <style>
-    /* CSS styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .social-links {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .social-links a {
-      display: inline-block;
-      margin: 0 10px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      line-height: 40px;
-      font-size: 20px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .social-links a:hover {
-      background-color: #555;
-    }
-    .twitter {
-      background-color: #1DA1F2;
-    }
-    .facebook {
-      background-color: #3B5998;
-    }
-    .instagram {
-      background-color: #E4405F;
-    }
-  </style>
-</head>
-<body>
-  <div class="social-links">
-    <!-- Social media links -->
-    <a class="twitter" href="https://twitter.com/birajlamsal" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a class="facebook" href="https://facebook.com/birajlamsalhoma" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a class="instagram" href="https://instagram.com/birajlamsal" target="_blank"><i class="fab fa-instagram"></i></a>
-  </div>
-
-  <!-- Font Awesome CDN for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJ9TR5T9S2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-QJ9TR5T9S2');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biraj| Terminal</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/biraj.png" />
+  </head>
+  <body>
+    <div id="terminal">
+      <a id="before"></a>
+    </div>
+    <div id="command" onclick="$('texter').focus();">
+      <textarea
+        type="text"
+        id="texter"
+        onkeyup="typeIt(this, event)"
+        onkeydown="typeIt(this, event); 
+                   moveIt(this.value.length, event)"
+        onkeypress="typeIt(this, event);"
+        autofocus
+      ></textarea>
+      <div id="liner">
+        <span id="typer"></span><b class="cursor" id="cursor">█</b>
+      </div>
+    </div>
+    <script src="js/caret.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
