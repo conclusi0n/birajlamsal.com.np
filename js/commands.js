@@ -70,7 +70,7 @@ help = [
 ];
 
 banner = [
-  '<span class="index">Biraj Lamsal Is Not A Corporation. All Rights reserved.</span>',
+  '<span class="index">Hi, I am Biraj Lamsal, an 18-year-old from Nepal. I am learning programming on my own and focusing on languages like C, Python, and Ruby. I’m passionate about coding and developing projects. Explore my work on GitHub to see the various projects I have been working on and how I approach coding challenges! Biraj Lamsal Is Not A Corporation. All Rights reserved.</span>',
 ".----------------.  .----------------.  .----------------.  .----------------.  .----------------. ",
 "  | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |",
 "  | |   ______     | || |     _____    | || |  _______     | || |      __      | || |     _____    | |",
